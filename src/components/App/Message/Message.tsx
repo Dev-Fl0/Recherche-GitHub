@@ -9,13 +9,13 @@ interface MessagesProps {
 }
 
 export default function Message({ nbResults }: MessagesProps) {
-  const [result, setResult] = useState('résultats');
+  const [result, setResult] = useState('Aucun résultat');
 
   useEffect(() => {
-    if (nbResults === 0) {
+    if (nbResults == 0) {
       setResult("La recherche n'a donnée aucun résultat");
     }
-    if (nbResults === 1) {
+    if (nbResults == 1) {
       setResult('La recherche a donnée 1 résultat');
     } else {
       setResult(`La recherche a donnée ${nbResults} résultats`);
@@ -24,9 +24,7 @@ export default function Message({ nbResults }: MessagesProps) {
 
   return (
     <div className="message border-b p-5">
-      <p className=" text-lg text-gray-700 ">
-        {result}
-      </p>
+      <p className=" text-lg text-gray-700 ">{result}</p>
     </div>
   );
 }
