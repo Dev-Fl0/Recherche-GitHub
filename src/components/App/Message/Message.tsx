@@ -12,11 +12,13 @@ export default function Message({ nbResults }: MessagesProps) {
   const [result, setResult] = useState('Aucun résultat');
 
   useEffect(() => {
-    if (nbResults == 0) {
+    if (nbResults === 0) {
       setResult("La recherche n'a donnée aucun résultat");
+      return;
     }
-    if (nbResults == 1) {
+    if (nbResults === 1) {
       setResult('La recherche a donnée 1 résultat');
+      return;
     } else {
       setResult(`La recherche a donnée ${nbResults} résultats`);
     }
