@@ -25,7 +25,7 @@ export default function Message({ nbResults }: MessagesProps) {
   return (
     <div className="message border-b p-5">
       <p className=" text-lg text-gray-700 ">
-        La recherche a donnée {nbResults} {result}
+        {result}
       </p>
     </div>
   );
