@@ -55,7 +55,7 @@ function App() {
     <div className="App">
       <header className="header">
         <a onClick={handleClick}>
-          <img src={Logo} alt="Logo gitHub" className="header-image" />
+          <img src={Logo} alt="Logo GitHub" className="header-image" />
         </a>
       </header>
       <SearchBar setSearch={setSearch} />
