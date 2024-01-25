@@ -48,6 +48,7 @@ function App() {
     event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
   ): void {
     setSearch('javascript');
+
   }
 
   return (

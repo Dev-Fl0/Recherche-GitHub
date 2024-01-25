@@ -18,6 +18,7 @@ export default function SearchBar({ setSearch }: SearchProps) {
   function handleSubmit(event: React.FormEvent<HTMLFormElement>): void {
     event.preventDefault();
     setSearch(inputValue);
+    setInputValue('');
   }
 
   function handleChange(event: React.ChangeEvent<HTMLInputElement>): void {
@@ -30,6 +31,7 @@ export default function SearchBar({ setSearch }: SearchProps) {
         <TextInput
           onChange={handleChange}
           className="searchBar-input"
+          value={inputValue}
           id="search"
           type="text"
           icon={HiSearch}
