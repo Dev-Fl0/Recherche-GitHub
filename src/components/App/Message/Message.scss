@@ -1,0 +1,12 @@
+@use '../../../styles/variables' as v;
+
+.message {
+  background-color: v.$color-ligth;
+  border: 1px solid v.$color-bg;
+  border-radius: v.$border-radius;
+  margin: 1rem auto;
+  width: 95%;
+}
+
+
+

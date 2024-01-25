@@ -1,0 +1,25 @@
+@use '../../styles/variables' as v;
+
+.App {
+  align-items: center;
+  background-color: v.$color;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: auto;
+  width: 92%;
+  overflow: auto;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: v.$gutter;
+
+  &-image {
+    text-align: center;
+    max-width: 15rem;
+    cursor: pointer;
+  }
+}

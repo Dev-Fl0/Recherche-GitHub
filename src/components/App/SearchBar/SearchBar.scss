@@ -1,0 +1,18 @@
+@use '../../../styles/variables' as v;
+
+
+.searchBar {
+  background-color: v.$color-ligth;
+  border-radius: v.$border-radius;
+  padding: v.$gutter;
+  width: 95%;
+
+  &-input {
+    width: 100%;
+    font-weight: 108rem;
+
+    &-textarea {
+      font-size: 100rem;
+    }
+  }
+}

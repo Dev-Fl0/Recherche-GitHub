@@ -1,0 +1,39 @@
+@use '../../../styles/variables' as v;
+
+.result {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 95%;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 5rem 0;
+  overflow: auto;
+}
+
+.card {
+  min-width: 32%;
+  max-width: 32%;
+  overflow: hidden;
+
+  &-item {
+    min-height: 50rem;
+    max-height: 50rem;
+
+
+    &__name {
+      font-size: 2.1rem;
+    }
+
+    &__login {
+      font-size: 1.5rem;
+      color: v.$color-bg;
+    }
+
+    &__description {
+      font-size: 1.5rem;
+
+    }
+  }
+}
